@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(43, 43, 43);
+}
