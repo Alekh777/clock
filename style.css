@@ -26,6 +26,7 @@ body, html{
 }
 
 .num{
+    padding-top: 5px;
     --rotation: 0deg;
     font-size: 40px;
     width: 400px;
@@ -48,4 +49,13 @@ body, html{
 .num10{--rotation: 300deg;}
 .num11{--rotation: 330deg;}
 
-.hand
+.hand{
+    --rotation: 0;
+    position: absolute;
+    width: 20px;
+    height: 50%;
+    background: red;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
