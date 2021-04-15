@@ -52,10 +52,28 @@ body, html{
 .hand{
     --rotation: 0;
     position: absolute;
-    width: 20px;
-    height: 50%;
-    background: red;
     left: 50%;
+    bottom: 50%;
     transform-origin: bottom;
     transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hand.second{
+    width: 5px;
+    height: 50%;
+    background: red;
+}
+
+.hand.minute{
+    width: 7px;
+    height: 40%;
+    background: rgba(151, 151, 151, 0.8);
+}
+
+.hand.hour{
+    width: 10px;
+    height: 35%;
+    background: rgba(151, 151, 151, 0.8);
 }
