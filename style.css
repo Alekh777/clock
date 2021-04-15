@@ -23,6 +23,7 @@ body, html{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    box-shadow: black 0px 0px 20px 1px;
 }
 
 .num{
@@ -61,19 +62,37 @@ body, html{
 }
 
 .hand.second{
+    z-index: 3;
     width: 5px;
-    height: 50%;
+    height: 45%;
     background: red;
 }
 
 .hand.minute{
+    z-index: 2;
     width: 7px;
-    height: 40%;
+    height: 35%;
     background: rgba(151, 151, 151, 0.8);
+    --rotation: 30;
 }
 
 .hand.hour{
+    z-index: 1;
     width: 10px;
-    height: 35%;
+    height: 30%;
     background: rgba(151, 151, 151, 0.8);
+    --rotation: 60;
+}
+
+.clock::after{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: rgb(207, 207, 207);
+    content: '';
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
